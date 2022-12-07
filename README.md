@@ -1,6 +1,6 @@
-# Curso-JS-Atividade-Navbar
+# Curso-WEB-Efeito-Glitch
 
-Projeto de desenvolvimento Rotating Loading 
+Projeto de desenvolvimento Efeito-Glitch
 
 Atividade curso Web
 
