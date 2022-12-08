@@ -1,6 +1,6 @@
-# Curso-WEB-Efeito-Glitch
+# Curso-WEB - Light/Dark 
 
-Projeto de desenvolvimento Efeito-Glitch
+Projeto de desenvolvimento Light/Dark 
 
 Atividade curso Web
 
