@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;    
+    list-style: none;
+    box-sizing: border-box;    
+  }
+  
+  :root {
+    --cor-primaria: #151320;
+    --cor-sucesso: #00bf8e;
+    --cor-alerta: #f7c94b;
+    --cor-perigo: #f75842;
+    --cor-perigo-variante: rgba(247, 88, 66, 0.4);
+    --cor-branco: #fff;
+    --cor-branco-variante:#e1e1e1;
+    --cor-branco-variante-1:#e6e6e6;
+    --cor-clara: rgba(255, 255, 255, 0.7);
+    --cor-escura: #000;
+    --cor-escura-variante: #151d2a;
+    --cor-escura-variante-1: #151d2a;
+    --cor-escura-variante-2: #1c2739;
+    --cor-bg: #1f2641;
+    --cor-bg1: #2e3267;
+    --cor-bg2: #424890;
+  
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+      
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;    
+    align-items: center;
+    justify-content: center; 
+    transition: .2s; 
+  }
+
+  .toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+    transition: .2s
+  }
+
+  .toggle i {
+    width: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+  }
+
+  .toggle .ball {
+    position: absolute;
+    width: 45px;
+    height: 45px;  
+    margin: 7.5px;  
+    border-radius: 50%;
+    transition: .3s ease-out;
+  }
+
+  input {
+    display: none;
+  }
+
+  /* MODO CLARO -- LIGHT */
+
+  .light {
+    background: var(--cor-branco);
+  }
+
+  .light .toggle {
+    background: linear-gradient(145deg, var(--cor-branco-variante), var(--cor-branco));
+    box-shadow: 3px 3px 4px var(--cor-branco-variante-1),
+    -3px -3px 4px var(--cor-branco);
+  }
+
+  .light .toggle .bxs-sun {
+    color: var(--cor-branco);
+  }
+
+  .light .toggle .bx-moon {
+    color: var(--cor-escura-variante);
+  }
+
+  .light .toggle .ball {
+    background: var(--cor-escura-variante);  
+  }
+
+  /* MODO ESCURO -- DARK */
+
+  
+  .dark {
+    background: var(--cor-escura-variante);  
+  }
+
+  .dark .toggle {
+    background: var(--cor-escura-variante); 
+    box-shadow: 3px 3px 3px var(--cor-escura-variante-1),
+    -3px -3px 3px var(--cor-escura-variante-2);
+  }
+
+  .dark .toggle .bx-sun {
+    color: var(--cor-branco);
+  }
+
+  .dark .toggle .bxs-moon {
+    color: var(--cor-escura-variante);
+  }
+
+  .dark .toggle .ball {
+    background: var(--cor-branco);  
+    transform: translateX(60px);
+  }
